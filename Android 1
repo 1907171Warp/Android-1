@@ -13,4 +13,39 @@
         android:src="@mipmap/ic_launcher" <!-- Logo de Android -->
         android:contentDescription="@string/logo_description"/>
 
+<resources>
+    <string name="app_name">MiApp</string>
+    <string name="buenos_dias_english">Good morning</string> <!-- Inglés -->
+    <string name="buenos_dias_french">Bonjour</string> <!-- Francés -->
+    <string name="buenos_dias_german">Guten Morgen</string> <!-- Alemán -->
+    <string name="buenos_dias_chinese">早上好</string> <!-- Chino Mandarín -->
+</resources>
+
+<TextView
+    android:id="@+id/textViewEnglish"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/logoImageView"
+    android:text="@string/buenos_dias_english" />
+
+<TextView
+    android:id="@+id/textViewFrench"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textViewEnglish"
+    android:text="@string/buenos_dias_french" />
+
+<TextView android:id="@+id/textViewGerman"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textViewFrench"
+    android:text="@string/buenos_dias_german" />
+
+<TextView
+    android:id="@+id/textViewChinese"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textViewGerman"
+    android:text="@string/buenos_dias_chinese" />
+
 </RelativeLayout>
